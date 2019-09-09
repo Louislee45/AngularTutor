@@ -1,0 +1,31 @@
+.container {
+  border-width: 3px;
+  border-style: solid;
+  border-color: darkred;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  height: 150px;
+}
+.container2 {
+  border-color: orange;
+  vertical-align: top;
+  display: inline-block;
+  width: 60%;
+}
+
+.word {
+  position: relative;
+  height: 30%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: orange;
+}
+
+.box {
+  border-width: 3px;
+  border-style: solid;
+  border-color: green;
+}
+
