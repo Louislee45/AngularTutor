@@ -1,0 +1,17 @@
+.box {
+  height: 10%;
+  width: 100%;
+  background-color: red;
+}
+
+.order{
+  height: 80%;
+  width: 100%;
+  background-color: green;
+}
+
+
+.container {
+  height : 100%;
+  width: 100px;
+}

@@ -9,6 +9,8 @@ export class TempComponent implements OnInit {
   vegetable: string;
   meat: string;
   order = false;
+  start = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -23,12 +25,18 @@ export class TempComponent implements OnInit {
   }
 
   setOrder() {
+    this.start = false;
     if(this.meat == "pork" && this.vegetable == "pepper") {
       this.order = true;
     }
     else if(this.meat == "beef" && this.vegetable == "tomato") {
       this.order = true;
     }
+  }
+
+  clear() {
+    this.start = true;
+    this.order = false;
   }
 
 }

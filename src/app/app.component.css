@@ -1,0 +1,23 @@
+.box {
+  width: 20%;
+  height: 300px;
+  border-width: 3px;
+  border-color: black;
+  background-color: lightpink;
+}
+
+.title{
+  background-color: orange;
+}
+
+.order {
+  position: relative;
+  width: 50%;
+  height: 60%;
+}
+
+.container {
+  height : 100%;
+  width: 60%;
+}
+

@@ -1,13 +1,29 @@
-<div>
-  <label>Input vegetable</label>
-  <br>
-  <input type = "text" [(ngModel)]="vegetable">
-  <br>
-  <label>Input meat</label>
-  <br>
-  <input type = "text" [(ngModel)]="meat">
-  <br>
-  <button style= "margin-top: 20px" (click) = "setOrder()">Submit</button>
-  <div *ngIf="order; else wrong" >You order is {{vegetable}} and {{meat}}</div>
-  <div #wrong>Wrong order. Please order again</div>
+<div class = "order" >
+  <div >
+    <label>Input vegetable</label>
+    <br>
+    <input type = "text" [(ngModel)]="vegetable">
+    <br>
+    <label>Input meat</label>
+    <br>
+    <input type = "text" [(ngModel)]="meat">
+    <br>
+    <button style= "margin-top: 20px" (click) = "setOrder()">Submit</button>
+    <button style= "margin-top: 20px; margin-left: 30px" (click) = "clear()">Clear</button>
+  </div>
 </div>
+
+<div class = "box">
+  <div style="margin-top: 20px" *ngIf="order && !start" >
+    You order is {{vegetable}} and {{meat}}
+  </div>
+  <div style="margin-top: 20px" *ngIf = "!order && !start">
+    Wrong order. Please order again
+  </div>
+  <div style="margin-top: 20px" *ngIf = "start">
+    Please order!!
+  </div>
+</div>
+
+
+
