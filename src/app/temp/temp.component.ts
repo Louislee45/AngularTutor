@@ -37,6 +37,8 @@ export class TempComponent implements OnInit {
   clear() {
     this.start = true;
     this.order = false;
+    this.vegetable = "";
+    this.meat = "";
   }
 
 }
